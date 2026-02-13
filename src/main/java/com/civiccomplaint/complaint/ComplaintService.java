@@ -105,7 +105,7 @@ public class ComplaintService {
 
         com.civiccomplaint.master.Prabhag prabhag = user.getPrabhag();
         String prabhagCode = "GEN"; // Default if not assigned
-        UUID prabhagId = null;
+        Integer prabhagId = null;
 
         if (prabhag != null) {
             prabhagCode = prabhag.getCode();
@@ -316,7 +316,7 @@ public class ComplaintService {
             if (admin.getPrabhag() == null) {
                 return ComplaintStatsResponse.builder().build();
             }
-            UUID prabhagId = admin.getPrabhag().getId();
+            Integer prabhagId = admin.getPrabhag().getId();
             total = complaintRepository.countByUserPrabhagId(prabhagId);
             pending = complaintRepository.countByUserPrabhagIdAndStatus(prabhagId, ComplaintStatus.PENDING);
             inProgress = complaintRepository.countByUserPrabhagIdAndStatus(prabhagId, ComplaintStatus.IN_PROGRESS);
@@ -382,7 +382,7 @@ public class ComplaintService {
      * @return paginated list of complaints
      */
     @Transactional(readOnly = true)
-    public PaginatedResponse<ComplaintResponse> getComplaintsForSuperAdmin(UUID adminId, UUID prabhagId,
+    public PaginatedResponse<ComplaintResponse> getComplaintsForSuperAdmin(UUID adminId, Integer prabhagId,
             ComplaintStatus status, Pageable pageable) {
         Page<Complaint> page;
 

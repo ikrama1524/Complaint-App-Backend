@@ -82,5 +82,5 @@ public interface UserRepository extends JpaRepository<User, UUID> {
      * @param role      user role
      * @return Optional containing user if found
      */
-    Optional<User> findFirstByPrabhagIdAndRole(UUID prabhagId, Role role);
+    Optional<User> findFirstByPrabhagIdAndRole(Integer prabhagId, Role role);
 }

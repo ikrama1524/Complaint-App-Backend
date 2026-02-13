@@ -49,6 +49,7 @@ public class ComplaintAttachmentService {
                         .imageData(file.getBytes())
                         .contentType(file.getContentType())
                         .fileName(file.getOriginalFilename())
+                        .fileSize(file.getSize())
                         .build();
 
                 ComplaintAttachment saved = attachmentRepository.save(attachment);

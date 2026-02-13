@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import com.civiccomplaint.master.dto.PrabhagResponse;
 import java.util.UUID;
 
 @Data
@@ -18,4 +19,8 @@ public class UserResponse {
     private String mobileNumber;
     private String role;
     private Boolean isActive;
+    private String address;
+    private String pinCode;
+    private Boolean hasPoster;
+    private PrabhagResponse prabhag;
 }

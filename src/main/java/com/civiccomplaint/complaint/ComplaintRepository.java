@@ -143,7 +143,7 @@ public interface ComplaintRepository extends JpaRepository<Complaint, UUID> {
      * @param pageable  pagination information
      * @return page of complaints
      */
-    Page<Complaint> findByUserPrabhagIdOrderByCreatedAtDesc(UUID prabhagId, Pageable pageable);
+    Page<Complaint> findByUserPrabhagIdOrderByCreatedAtDesc(Integer prabhagId, Pageable pageable);
 
     /**
      * Count complaints by user's prabhag ID and status.
@@ -152,7 +152,7 @@ public interface ComplaintRepository extends JpaRepository<Complaint, UUID> {
      * @param status    the complaint status
      * @return count of complaints
      */
-    long countByUserPrabhagIdAndStatus(UUID prabhagId, ComplaintStatus status);
+    long countByUserPrabhagIdAndStatus(Integer prabhagId, ComplaintStatus status);
 
     /**
      * Count complaints by user's prabhag ID.
@@ -160,17 +160,16 @@ public interface ComplaintRepository extends JpaRepository<Complaint, UUID> {
      * @param prabhagId the prabhag ID
      * @return count of complaints
      */
-    long countByUserPrabhagId(UUID prabhagId);
+    long countByUserPrabhagId(Integer prabhagId);
 
     /**
-     * Find complaints by user's prabhag ID and status ordered by creation date
-     * descending.
+     * Find complaints by user's prabhag ID and status with pagination.
      *
      * @param prabhagId the prabhag ID
      * @param status    the complaint status
      * @param pageable  pagination information
      * @return page of complaints
      */
-    Page<Complaint> findByUserPrabhagIdAndStatusOrderByCreatedAtDesc(UUID prabhagId, ComplaintStatus status,
+    Page<Complaint> findByUserPrabhagIdAndStatusOrderByCreatedAtDesc(Integer prabhagId, ComplaintStatus status,
             Pageable pageable);
 }

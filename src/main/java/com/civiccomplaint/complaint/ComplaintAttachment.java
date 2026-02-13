@@ -41,6 +41,9 @@ public class ComplaintAttachment {
     @Column(name = "file_name", nullable = false)
     private String fileName;
 
+    @Column(name = "file_size", nullable = false)
+    private Long fileSize;
+
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;

@@ -6,10 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.UUID;
-
 @Repository
-public interface ComplaintSequenceRepository extends JpaRepository<Complaint, UUID> {
+public interface ComplaintSequenceRepository extends JpaRepository<Complaint, Integer> {
 
     @Query(value = """
             INSERT INTO complaint_sequences (prabhag_id, year, current_value)
@@ -18,5 +16,5 @@ public interface ComplaintSequenceRepository extends JpaRepository<Complaint, UU
             DO UPDATE SET current_value = complaint_sequences.current_value + 1
             RETURNING current_value
             """, nativeQuery = true)
-    int getNextSequenceValue(@Param("prabhagId") UUID prabhagId, @Param("year") int year);
+    int getNextSequenceValue(@Param("prabhagId") Integer prabhagId, @Param("year") int year);
 }

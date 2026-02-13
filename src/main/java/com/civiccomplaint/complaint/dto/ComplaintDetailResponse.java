@@ -49,7 +49,7 @@ public class ComplaintDetailResponse {
     @Data
     @Builder
     public static class AdminInfo {
-        private UUID prabhagId;
+        private Integer prabhagId;
         private String prabhagName;
         // In this system, complaints are assigned to a Prabhag, managed by Admins of
         // that Prabhag

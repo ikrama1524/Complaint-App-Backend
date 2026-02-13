@@ -4,13 +4,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-import java.util.UUID;
 
 /**
  * Repository for Prabhag entity.
  */
 @Repository
-public interface PrabhagRepository extends JpaRepository<Prabhag, UUID> {
+public interface PrabhagRepository extends JpaRepository<Prabhag, Integer> {
 
     boolean existsByName(String name);
 

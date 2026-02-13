@@ -4,6 +4,7 @@ C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintController.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\auth\JwtUtil.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\config\SecurityConfig.java
+C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\SharedComplaintController.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\user\dto\CreateAdminRequest.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\user\User.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintType.java
@@ -21,6 +22,7 @@ C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\common\dto\PaginatedResponse.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\auth\dto\RegisterRequest.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintAttachment.java
+C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\master\dto\CreatePrabhagRequest.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\dto\ComplaintStatusUpdateRequest.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintService.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\auth\dto\AuthResponse.java
@@ -33,6 +35,8 @@ C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\master\Prabhag.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\AdminComplaintController.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\user\CitizenController.java
+C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintSequenceRepository.java
+C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\auth\CustomUserDetails.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\Complaint.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintAttachmentController.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\ComplaintAttachmentService.java
@@ -41,3 +45,4 @@ C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\dto\ComplaintStatsResponse.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\user\UserService.java
 C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\common\entity\BaseEntity.java
+C:\Users\KabirBagalkot\.gemini\antigravity\scratch\civic-complaint-api\src\main\java\com\civiccomplaint\complaint\dto\ComplaintDetailResponse.java

@@ -43,5 +43,5 @@ public class RegisterRequest {
     private String password;
 
     @jakarta.validation.constraints.NotNull(message = "Prabhag ID is required")
-    private java.util.UUID prabhagId;
+    private Integer prabhagId;
 }
